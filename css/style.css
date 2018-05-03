@@ -1,0 +1,62 @@
+/* some style */
+
+.point:hover {
+ stroke: red;
+ fill:   red;
+}
+
+.parenthesis:hover {
+    stroke: red;
+}
+
+.brackets:hover {
+    stroke: red;
+}
+
+#main {
+    margin: 0% 20% 0%;
+}
+
+header {
+    text-align: center;
+    font-size: 30px;
+}
+
+footer {
+    margin: 5%;
+    text-align: center;
+    font-size: 15px;
+}
+
+h1 {
+    margin: 5px;
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+article {
+    margin: 20px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.move_left {
+    float: left;
+}
+
+.move_right {
+    float: right;
+}
+
+.canvas {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="https://clojurescript.org/images/cljs-logo-icon-32.png">
+  </head>
+  <body>
+    <header>ИНТЕРАКТИВНАЯ МАТЕМАТИКА</header>  
+    <div id="main">
+    <div class="math" id="math1"> 
+        <article>
+        <section>
+            <h1>Типы точек множеств</h1>
+            <p>Введем некоторые определния которыми будем оперировать в ходе лекции:</p>
+            <ul>
+                <li><dfn>Интервал (a, b)</dfn> - множество всех чисел <em>x</em>, т. ч. <em>a < x < b</em>.</li>
+                <li><dfn>Окрестность точки a &#8712 R</dfn> - это интервал <em>(a, b)</em>, т. ч. <em>a &#8712 (b, c)</em></li>
+                <li><dfn>Проколотая окрестность точки a &#8712 R</dfn> - это множество <em>(b, a) &#8899 (a, c)</em>.</li>
+                <li><dfn>&#120576-окрестность точки a &#8712 R</dfn> - это такой интервал <em>(b, c)</em>, что <em>a=(b + c)/2</em>.</li>
+            </ul>
+            <nav>
+              <ol>
+                <li><a href="#inner_point">Внутрення точка</a></li>
+                <li><a href="#external_point">Внешняя точка</a></li>
+                <li><a href="#in_work">Граничная точка</a></li>
+                <li><a href="#in_work">Изолированная точка</a></li>
+                <li><a href="#in_work">Предельная точка</a></li>
+              </ol>
+            </nav>
+        </section>
+        <section id="inner_point">
+            <h2>Внутрення точка</h2>
+            <p>
+             Точка <em><b>a</b> &#8712 <b>R</b></em> является внутренней для множества <em><b>A</b> &#8834 <b>R</b></em>, если &#8707 окрестность точки <em>a</em>, полностью содержащаяся в <em><b>A</b></em>.
+            </p>
+        </section>
+        <section id="external_point">
+            <h2>Внешняя точка</h2>
+            <p>
+             Точка <em><b>a</b> &#8712 <b>R</b></em> является внешней для множества <em><b>A</b> &#8834 <b>R</b></em>, если &#8707 окрестность точки <em>a</em>, полностью не лежащая в <em><b>A</b></em>.
+            </p>
+        </section>
+        <section id="in_work">
+                <h2>Граничная точка</h2>
+                <p>
+                 in work...
+                </p>
+        </section>
+        <section id="in_work">
+                <h2>Изолированная точка</h2>
+                <p>
+                 in work...
+                </p>
+        </section>
+        <section id="in_work">
+                <h2>Предельная точка</h2>
+                <p>
+                 in work...
+                </p>
+        </section>
+      </article>
+      <div class="move_left">
+          <button id="math1_left">Left</button>
+      </div>
+      <div class="move_right">
+          <button id="math1_right" class="move_right">Right</button>
+      </div>
+      <svg id="math1_canvas" class="canvas" height="200" width="800">
+        Sorry, your browser does not support inline SVG.
+      </svg>
+      <div class="buttons">
+          <button id="math1_parenthesis">( ... )</button>
+          <button id="math1_brackets">[ ... ]</button>
+          <button id="math1_check">Check!</button>
+      </div>
+      <footer itemscope itemtype="http://schema.org/Person">
+        Автор: <span itemprop="givenName">Александр Лозовский</span><br>
+        <span itemprop="jobTitle">кандидат физико-математических наук</span><br>
+        <address>Электронная почта: <a href="mailto:saiya-jin@yandex.ru">saiya-jin@yandex.ru</a></address>
+        Компания: <span itemprop="afflication"><a href="https://www.lozovskiy-company.ru">company</a></span>
+      </footer>
+    </div>
+    </div>
+    <footer>interactive@math.com</footer>
+    <script src="js/compiled/math.js" type="text/javascript"></script>
+  </body>
+</html>
